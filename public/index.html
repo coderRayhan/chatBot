@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chat Services</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body >
+	<div class="chatContainer">
+		<h3 class="chatHead">AS Messanger</h3>
+	    <div class="userDiv">
+			<h3>Room Name</h3>
+			<h4 id = "roomName"></h4><br><br><br><br>
+	    	<h3>Active Users</h3>
+	    	<ol id="userlist";"></ol>
+	    </div>
+	    <div class="chatBoxContainer">
+			<div class="chat-box">
+			<div id="output">
+
+			</div>
+			</div>
+			<div class="chat" >
+		<ul class="chatList" >
+			<li style="font-size: 11pt; margin-top: 20px;"><b>Enter Message:</b></li>
+			<li >
+				<input type="text" class="inputField" id="data" style="margin-top: 20px;">
+			</li>
+			<li>
+		<ul class="media">
+			<li>
+			<div class="fileicon-box">
+			<label for="imagefile"><img src="folder.png" alt="icon" id="file-icon"></label>
+			<input type="file" id="imagefile" class="inputFile"/>
+			</div>
+			</li>
+							
+		</ul>
+			<button type="button" class="btnSend" id="datasend">Send</button>
+			</li>
+		</ul>
+			</div>
+	    </div>
+	</div>
+    
+	
+	<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+	<script src="socket.io/socket.io.js"></script>
+    <script src="custom.js"></script>
+    <script type="text/javascript">
+    	
+    </script>
+</body>
+</html>
